@@ -1,0 +1,218 @@
+a{text-decoration: none !important;}
+.first{
+	height:180px;width:100%; background-color:#77a984;text-align: center;color:#ffffff;
+}
+.imgstyle{
+	width:60px;height:60px;border-radius: 50%;margin-top: 80px;margin-bottom: 10px;
+}
+
+.mt7{
+	margin-top: 7px;
+}
+p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*about页面的*/
+.aboutstyle{
+ 	  position: absolute;
+    bottom: 35px;
+    left: 0px;
+    color: #888;
+    display: block;
+    font-size: 12px;
+    
+    width: 100%;
+    padding: 0px 10px;
+ }
+ .aboutstyle2{
+ 	  position: absolute;
+    bottom: 5px;
+    left: 0px;
+    
+    display: block;
+    font-size: 16px;
+    margin-top: 6px;
+    width: 100%;
+    padding: 0px 10px;
+ }
+
+
+
+/*index页面的中间部分*/
+.m-part2{
+	box-sizing:border-box;
+	height:75px;
+	border-bottom:1px solid #c8c7cc;
+	    background-color: #ffffff;
+	    margin-bottom: 10px;
+}
+
+.m-part2 .xinyong{
+	border-right:1px solid #cacaca;
+	box-sizing:border-box;
+	float:left;
+	padding-left:18px;
+	width:50%;
+	height:75px;
+}
+.m-part2 .xinyong div{
+	float:left;
+	color:#333;
+	font-size:16px;
+}
+.m-part2 .xinyong div:first-child{
+	padding-top:13.5px;
+}
+.m-part2 .xinyong div:last-child{
+	line-height:75px;
+	 float: right;
+    margin-right: 15px;
+}
+.m-part2 .xinyong div span{
+	display:block;
+}
+.m-part2 .xinyong div span:last-child{
+	font-size:14px;
+	color:#c3c3c3;
+	font-weight:normal;
+	   
+}
+.m-part2 .quyou{
+	box-sizing:border-box;
+	float:left;
+	padding-left:18px;
+	width:50%;
+	height:75px;
+	line-height:75px;
+	padding-right:18px;
+	color:#77a984;
+	font-size:fontB;
+}
+
+.m-part2 .quyou img{
+	    width: 6px;
+    height: 10px;
+}
+
+/**/
+
+.recharge-part{
+	background:#E4E4E4;
+	height:100%;
+}
+.recharge-part .price-choice{
+	margin-top:42px;
+	padding:15px;
+	overflow:hidden;
+}
+.recharge-part .price-choice .choice-box{
+	box-sizing:border-box;
+	float:left;
+	margin:10px 0;
+	margin-left:7%;
+	width:24%;
+	height:50px;
+	border:2px solid #77a984;
+	border-radius:4px;
+	background-color:#fff;
+}
+.recharge-part .price-choice .choice-box >span{
+	display:block;
+	height:50%;
+	line-height:25px;
+	color:#0eaf28;
+	text-align:center;
+}
+.recharge-part .price-choice .choice-box .cash{
+	font-size:18px;
+}
+.recharge-part .price-choice .choice-box .coin{
+	font-size:12px;
+}
+.recharge-part .price-choice .selected{
+	background:green !important;
+}
+.recharge-part .price-choice .selected >span{
+	color:#fff !important;
+}
+.recharge-part .certain{
+	display:block;
+	width:90%;
+	height:50px;
+	line-height:50px;
+	color:#fff;
+	background:#77a984;
+	font-size:18px;
+	text-align:center;
+	border-radius:4px;
+	margin:50px auto;
+}
+
+/*酒店详情*/
+
+.order-part{
+	background:#ffffff;
+	min-height:100%;
+}
+.order-part .order-list{
+	padding:10px;
+	width:100%;
+	
+}
+.order-part .order-list .order-list-ul .order-item{
+	background:#fff;
+	margin-top:10px;
+}
+.order-part .order-list .order-list-ul .order-item .item-part{
+	padding:0 10px;
+}
+.order-part .order-list .order-list-ul .order-item .item-name{
+	height:48px;
+	line-height:48px;
+	font-size:16px;
+	color:#2d2d2d;
+	border-bottom:1px solid #ddd;
+	text-align: left;
+}
+.order-part .order-list .order-list-ul .order-item .item-info{
+	height:55px;
+	border-bottom:1px solid #ddd;
+	/*padding:23px 0 0 15px;*/
+	font-size:14px;
+	color:#999;
+	text-align: left;
+}
+.order-part .order-list .order-list-ul .order-item .item-bottom{
+	height:50px;
+	line-height:50px;
+}
+.order-part .order-list .order-list-ul .order-item .item-bottom a{
+	float:left;
+	margin-left:7px;
+	width:85px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	display:inline-block;
+	margin-top:6px;
+	
+}
+.order-part .order-list .order-list-ul .order-item .item-bottom a.delete{
+	border:1px solid #7f7f7f;
+	float:right;
+	background-color: #EEEEEE;
+}
+.order-part .order-list .order-list-ul .order-item .item-bottom a.more{
+	background:#77a984;
+	color:#fff;
+}
+.order-part .order-list .order-list-ul .order-item .item-bottom span{
+	font-size:16px;
+}
+.order-part .order-list .order-list-ul .order-item .item-bottom span.lived{
+	color:#84b96b;
+}
