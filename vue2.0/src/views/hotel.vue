@@ -1,14 +1,19 @@
 <template>
   <div>
-	   <mt-cell title="我的订单" icon="more"  is-link @click.native="goRouter(1)">
-	   	 <img src="../assets/images/order.png" slot="icon" width="18" height="18"/>
+  	<mt-header fixed title="酒店">
+      	<router-link to="/" slot="left" >
+            <mt-button icon="back" @click.native="$router.go(-1)"></mt-button>
+        </router-link>
+      </mt-header>
+	   <mt-cell title="我的订单" icon="more" class="mt-40" is-link @click.native="goRouter(1)">
+	   	 <img src="../assets/images/order.png" slot="icon" width="16" height="16"/>
 	   </mt-cell>
 	   <mt-cell title="我的退款" icon="more" is-link @click.native="goRouter(2)">
-	   	 <img src="../assets/images/money.png" slot="icon" width="18" height="18"/>
+	   	 <img src="../assets/images/money.png" slot="icon" width="16" height="16"/>
 	   </mt-cell>
-	   <mt-cell title="我的发票" icon="more" is-link @click.native="goRouter(3)">
-	   	 <img src="../assets/images/invoice.png" slot="icon" width="18" height="18"/>
-	   </mt-cell>
+	   <!--<mt-cell title="我的发票" icon="more" is-link @click.native="goRouter(3)">
+	   	 <img src="../assets/images/invoice.png" slot="icon" width="16" height="16"/>
+	   </mt-cell>-->
   </div>
 </template>
 
@@ -28,7 +33,10 @@
           case 3:this.$router.push({path:'bill'});break;         //发票
           
         }
-      }
+      },
+       routerBack(){
+        this.$router.go(-1);
+      },
     }
  }
 </script>
@@ -45,6 +53,6 @@ body {
 }
 .mint-cell img {
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 </style>

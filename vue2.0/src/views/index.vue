@@ -1,43 +1,43 @@
 <template>
-  <div >
-  	<div class="first" >
-  		 <img :src="dizhi" class="imgstyle"/>
-  		 <p>{{name}}</p>
-  	</div>
-  	
-   <div class="m-part2  clearfix">
-       <div class="xinyong clearfix" @click="goRouter(7)">
-           <div>
-             <span>账户积分</span>
-             <span class="mt7">查看额度</span>
-           </div>
-           <div>{{ jifen }}积分</div>
-        </div>
-       <div class="quyou clearfix" @click="goRouter(6)"> 充值积分
-           <span style="float:right;display: inline-block">
-                <img class="arrow-right" src="../assets/images/jiantou.png" alt="">
-           </span>
-       </div>
+  <div>
+    <div class="first">
+      <img :src="dizhi" class="imgstyle" />
+      <p>{{name}}</p>
     </div>
-   
-   
-   <mt-cell title="酒店订单" icon="more"  is-link  @click.native="goRouter(1)">
-   	 <img src="../assets/images/jiudian.png" slot="icon" width="18" height="18"/>
-   </mt-cell>
-   <mt-cell title="贴吧列表" icon="more" is-link @click.native="goRouter(2)">
-   	 <img src="../assets/images/tieba.png" slot="icon" width="18" height="18"/>
-   </mt-cell>
-   <mt-cell title="会议订单" icon="more" is-link @click.native="goRouter(3)">
-   	 <img src="../assets/images/write.png" slot="icon" width="18" height="18"/>
-   </mt-cell>
-   <mt-cell title="商城订单" icon="more" is-link>
-   	 <img src="../assets/images/shop.png" slot="icon" width="18" height="18"/>
-   </mt-cell>
-   <mt-cell title="意见反馈" icon="more" is-link>
-   	 <img src="../assets/images/form.png" slot="icon" width="18" height="18"/>
-   </mt-cell>
 
-  </div>
+    <div class="m-part2  clearfix">
+      <div class="xinyong clearfix" @click="goRouter(7)">
+        <div>
+          <span>账户积分</span>
+          <span class="mt7">查看额度</span>
+        </div>
+        <div>{{ jifen }}积分</div>
+      </div>
+      <div class="quyou clearfix" @click="goRouter(6)"> 积分充值
+        <span style="float:right;display: inline-block">
+<img class="arrow-right" src="../assets/images/jiantou.png" alt="">
+</span>
+</div>
+</div>
+
+<div class="bottom"></div>
+<mt-cell title="酒店订单" icon="more" is-link @click.native="goRouter(1)">
+  <img src="../assets/images/jiudian.png" slot="icon" width="16" height="16" />
+</mt-cell>
+<mt-cell title="贴吧列表" icon="more" is-link @click.native="goRouter(2)">
+  <img src="../assets/images/tieba.png" slot="icon" width="16" height="16" />
+</mt-cell>
+<!--<mt-cell title="会议订单" icon="more" is-link @click.native="goRouter(3)">
+   	 <img src="../assets/images/write.png" slot="icon" width="16" height="16"/>
+   </mt-cell>-->
+   <!--<mt-cell title="商城订单" icon="more" is-link>
+   	 <img src="../assets/images/shop.png" slot="icon" width="16" height="16"/>
+   </mt-cell>-->
+<mt-cell title="意见反馈" icon="more" is-link @click.native="goRouter(5)">
+  <img src="../assets/images/form.png" slot="icon" width="16" height="16" />
+</mt-cell>
+
+</div>
 </template>
 
 <script type="es6">
@@ -51,7 +51,8 @@
         jifen:"",
         dizhi:"",
         gridData:[],
-      }
+      } 
+
    },
    methods:{
       goRouter(index){
@@ -60,7 +61,7 @@
           case 2:this.$router.push({path:'tieba'});break;
           case 3:this.$router.push({path:'huiyi'});break;
           case 4:this.$router.push({path:'singer'});break;
-          case 5:this.$router.push({path:'ringtone'});break;
+          case 5:this.$router.push({path:'feedback'});break;
           case 6:this.$router.push({path:'integral'});break;    //积分充值
           case 7:this.$router.push({path:'about'});break;       //账户积分余额
         }
@@ -102,7 +103,10 @@ body {
 }
 .mint-cell img {
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 6px;
+}
+.mint-cell-wrapper{
+	 
 }
 
 </style>

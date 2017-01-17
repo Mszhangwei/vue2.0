@@ -23,6 +23,7 @@
 	                        </div>
 	                </li>
 	            </ul>
+	            <div class="fapiao">非常感谢您使用住了吗酒店订房系统，住了吗系统是酒店直销订房，所有发票均有酒店开出，如有问 题请反馈，谢谢！给您带来不便，敬请谅解！</div>
 	        </div>
         </navbar>
      </div>
@@ -44,7 +45,7 @@
 	                        </div>
 	                </li>
 	            </ul>
-	            <span style="font-size: 12px;">非常感谢您使用住了吗酒店订房系统，住了吗系统是酒店直销订房，所有发票均有酒店开出，如有问 题请反馈，谢谢！给您带来不便，敬请谅解！</span>
+	            <div class="fapiao">非常感谢您使用住了吗酒店订房系统，住了吗系统是酒店直销订房，所有发票均有酒店开出，如有问 题请反馈，谢谢！给您带来不便，敬请谅解！</div>
 	        </div>
         </navbar>
     </div>
@@ -55,7 +56,7 @@
   </div>
 </template>
 
-<script type="es6">
+<script>
  import { Navbar, TabItem,MessageBox } from 'mint-ui';
  import {api} from '../assets/js/common';
  export default{
@@ -110,13 +111,7 @@
 				    }); 
 		     });
 },
-     
-     //退款请求跳转
-     refund: function(){
-     	  MessageBox.confirm('是否退款?').then(action => {
-           this.$router.push({ path: 'nomoney' });
-     });
-},
+    
      
    }
  }
