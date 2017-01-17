@@ -1,7 +1,7 @@
 <template>
   <div id="app2">
-    <k-head></k-head>
-    <div style="margin-top: 40px;"> 
+    <!--<k-head></k-head>-->
+    <div > 
     	<keep-alive>
       <router-view class="view"></router-view>
       </keep-alive>
@@ -29,7 +29,7 @@ body {
     padding: 0px;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
-    background-color: #E4E4E4;
+    background-color: #FFFFFF;
 }
 ul{
     display: block;
@@ -57,7 +57,7 @@ a:-webkit-any-link {
 }
 .mint-header {
     
-    background-color: green!important;
+    background-color: #77a984!important;
     }
 ul li a.router-link-active{color:green;}
 </style>
