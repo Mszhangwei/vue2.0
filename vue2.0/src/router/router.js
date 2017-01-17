@@ -15,17 +15,37 @@ const route = new VueRouter({
   },{
     path:'/order',component:require('../views/order')
   },{
+    path:'/details/:outTradeNo',component:require('../views/details')
+  },{
+    path:'/letter',component:require('../views/letter')
+  },{
+    path:'/collection',component:require('../views/collection')
+  },{
+    path:'/comments',component:require('../views/comments')
+  },{
+    path:'/post',component:require('../views/post')
+  },{
     path:'/bill',component:require('../views/bill')
   },{
     path:'/integral',component:require('../views/integral')
   },{
     path:'/about',component:require('../views/about')
   },{
-    path:'/huiyi',component:require('../views/huiyi')
+    path:'/feedback',component:require('../views/feedback')
+  },{
+    path:'/assess/:outTradeNo',component:require('../views/assess')
+  }
+//,
+//{
+//  path:'/checkin',component:require('../views/checkin'), name: 'checkin'
+//}
+  ,{
+    path:'/postdetails/:tiebaId',component:require('../views/postdetails')
   },{
     path:'*',redirect:'/index'
-  }]
-   
+  }
+  
+]
    
 })
 
